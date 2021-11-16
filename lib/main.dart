@@ -10,7 +10,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -73,10 +72,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 right: 20.0,
                 bottom: 20.0,
               ),
-              child: const Text('Please input a number to see if it is square or cube.',
-                  style: TextStyle(
-                    fontSize: 20,
-                  )),
+              child: const Text(
+                'Please input a number to see if it is square or cube.',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
             ),
             FractionallySizedBox(
               widthFactor: 0.8,
